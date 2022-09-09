@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scaled=1.0" />
+    <title>Site</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <h1>
+          <a href="index.html">
+            <img src="img/eduarda ceron 02.svg" alt="logo" />
+          </a>
+        </h1>
+        <ul>
+          <li><a href="index.html">inicio</a></li>
+          <li><a href="serviços.html">serviços</a></li>
+          <li><a href="contato.html">contato</a></li>
+          <li><a href="produto.html">produto</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container clearfix">
+        <div class="col-12">
+          <form>
+            <label for="nome"> Informe seu nome</label>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Nome"
+              required
+            />
+
+            <label for="email">Informe seu E-mail</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Informe seu E-mail"
+              required="true"
+            />
+
+            <label>Informe a sua turma</label>
+            <div class="form-group">
+              <input
+                type="radio"
+                name="turma"
+                id="turma_1A"
+                value="1A"
+                checked
+              />
+              <label for="turma_1A">1A</label>
+              <input type="radio" name="Turma" id="turma_1B" value="1B" />
+              <label for="turma_1B">1B</label>
+            </div>
+
+            <label for="nome">Motivo</label>
+            <select name="motivo" id="motivo" required>
+              <option value="">Selecione o Motivo</option>
+              <option value="sugestão">Sugestão</option>
+              <option value="problema">Relatar problema</option>
+              <option value="outro">Outro</option>
+            </select>
+
+            <label for="mensagem"> Informe sua mensagem</label>
+            <textarea name="mensagem" id="mensagem" rows="5"></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container clearfix">
+        <div class="col-2"></div>
+        <div class="col-4">
+          <h1>Institucional</h1>
+          <ul>
+            <li>Sobre Informática</li>
+            <li>Curiosidades sobre os computadores</li>
+            <li>Tudo sobre Informática</li>
+          </ul>
+        </div>
+
+        <div class="col-2"></div>
+        <div class="col-4">
+          <h1>Links Úteis</h1>
+          <ul>
+            <li>Encontre computadores</li>
+            <li>Informática</li>
+            <li>Produtos e Vendas</li>
+            <li>Curiosidades do Computador</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container clearfix center">
+        <p>
+          Instituto Federal de Educação e Tecnologia Catarinense-Campus Videira
+        </p>
+        <p>
+          Rodovia SC135, km125- Bairro Campo Experimental- CEP 89564-590-
+          Videira - SC- Fone:(49) 3533-4200
+        </p>
+      </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("MX5wiBsa49kE9mqoV");
+      })();
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
